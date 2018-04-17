@@ -70,3 +70,5 @@ api.hehe#{User:{name:"Bob",msg:"nihao"}}
 api.he#{User:{name:"Bob",msg:"nihao"}}
 api.lo#{User:{name:"Bob",msg:"nihao"}}
 ```
+## UI
+### api_gateway_console
