@@ -1,0 +1,5 @@
+api.hello#{User:{name:"Bob",msg:"nihao"}}
+api.ni#{User:{name:"Bob",msg:"nihao"}}
+api.hehe#{User:{name:"Bob",msg:"nihao"}}
+api.he#{User:{name:"Bob",msg:"nihao"}}
+api.lo#{User:{name:"Bob",msg:"nihao"}}

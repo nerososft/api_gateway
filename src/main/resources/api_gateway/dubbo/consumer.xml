@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://code.alibabatech.com/schema/dubbo
+ http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+    <!-- Application name -->
+    <dubbo:application name="demo_provider"  />
+    <!-- registry address, used for service to register itself -->
+    <dubbo:registry protocol="zookeeper"  address="zookeeper://47.94.251.146:2181" />
+
+    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+    <dubbo:reference id="IHelloWorld" interface="com.iot.nero.api_gateway.demo.service.IHelloWorld" />
+
+</beans>
